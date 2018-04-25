@@ -1,0 +1,173 @@
+@import "base";
+
+#spree-header {
+  background-color: white;
+
+  #header {
+    background-color: white;
+    padding: 20px 0 0 0;
+  }
+
+  #logo {
+    img {
+      width: 88px;
+      height: 30px;
+    }
+  }
+
+  .nav {
+    a {
+      &:hover, &:focus {
+        background-color: white;
+      }
+    }
+  }
+
+  #main-nav-bar {
+    .nav.navbar-nav {
+      display: none;
+    }
+
+    .nav.navbar-nav.navbar-right {
+      display: block;
+    }
+  }
+}
+
+#breadcrumbs {
+  .breadcrumb {
+    background-color: white;
+  }
+}
+
+#taxon-crumbs {
+  #similar_items_by_taxon {
+    li.list-group-item {
+      border-radius: 0;
+    }
+  }
+}
+
+input.form-control, textarea.form-control {
+  border-color: $color-dusty-gray;
+  border-radius: 0;
+  padding: 6px 8px;
+  height: auto;
+  font-size: 12px;
+  line-height: 1.5em;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $color-cod-gray;
+    box-shadow: none;
+  }
+}
+
+.well {
+  background-color: $color-wild-sand;
+  border-color: $color-wild-sand;
+  border-radius: 0;
+}
+
+#search-bar {
+  select[name="taxon"] {
+    display: none;
+  }
+}
+
+aside#sidebar {
+  .taxonomy-root {
+    display: none;
+  }
+
+  .list-group {
+    a.list-group-item {
+      border: none;
+      border-left: solid white 2px;
+
+      &:focus {
+        outline: none;
+        background-color: white;
+      }
+
+      &.active, &:hover {
+        background-color: white;
+        color: $color-mexican-red;
+
+        &.active {
+          border-left: solid $color-mexican-red 2px;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  .page, .next_page, .first, .prev, .last, .next {
+    &.active {
+      a, span {
+        color: white;
+        border-color: $color-abbey;
+        background-color: $color-abbey;
+      }
+    }
+
+    a, span {
+      color: $color-abbey;
+    }
+  }
+
+  li {
+    &:first-child, &:last-child {
+      a, span {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.panel {
+  border-radius: 0;
+}
+
+.product-list-item {
+  .panel-body {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-footer {
+    //background-color: $color-cod-gray;
+    //color: white;
+  }
+}
+
+#sidebar_products_search {
+  display: none;
+}
+
+.alert {
+  &.alert-info, &.alert-success, &.alert-notice {
+    background-color: $color-wild-sand;
+    border-color: $color-wild-sand;
+    color: $color-dusty-gray;
+    border-radius: 0;
+  }
+}
+
+#update-cart {
+  #checkout-link {
+    padding: 6px 12px;
+    border-color: $color-cod-gray;
+    background-color: $color-cod-gray;
+    color: white
+  }
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: $color-abbey;
+  border-radius: 0;
+}

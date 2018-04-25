@@ -1,0 +1,36 @@
+@import "base";
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $base-font-color;
+}
+
+a {
+  color: $base-font-color;
+
+  :hover {
+    color: $color-mexican-red;
+  }
+}
+
+#spree-header {
+  .nav {
+    a {
+      color: $base-font-color;
+
+      &:hover, &:focus {
+        color: $color-mexican-red;
+      }
+    }
+  }
+}
+
+input, textarea {
+  color: $color-abbey;
+  font-size: 12px;
+}
+
+.text-primary {
+  color: $color-cod-gray;
+}

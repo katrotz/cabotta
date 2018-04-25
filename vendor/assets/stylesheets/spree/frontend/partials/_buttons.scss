@@ -1,0 +1,53 @@
+@import "base";
+
+.btn {
+  font-size: 12px;
+  line-height: 1.5em;
+
+  &.btn-default {
+    border-color: $color-cod-gray;
+    background-color: white;
+    color: $color-cod-gray;
+    border-radius: 0;
+
+    &:focus, &:active, &:hover, &:visited {
+      border-color: $color-cod-gray;
+      background-color: white;
+      color: $color-cod-gray;
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-primary {
+    border-color: $color-abbey;
+    background-color: white;
+    color: $color-abbey;
+    border-radius: 0;
+
+    &:focus, &:active, &:hover, &:visited {
+      border-color: $color-abbey;
+      background-color: white;
+      color: $color-abbey;
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-success {
+    border-color: $color-cod-gray;
+    background-color: white;
+    color: $color-cod-gray;
+    border-radius: 0;
+
+    &:focus, &:active, &:hover, &:visited {
+      border-color: $color-cod-gray;
+      background-color: white;
+      color: $color-cod-gray;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
