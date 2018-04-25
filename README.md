@@ -26,4 +26,7 @@ bundle install
 rails g spree:install --user_class=Spree::User
 rails g spree:auth:install
 rails g spree_gateway:install
+
+# Production
+bundle exec rake assets:precompile RAILS_ENV=production
 ```
