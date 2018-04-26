@@ -48,6 +48,10 @@
   }
 }
 
+.list-group-item:first-child, .list-group-item:last-child {
+  border-radius: 0;
+}
+
 input.form-control, textarea.form-control {
   border-color: $color-dusty-gray;
   border-radius: 0;
@@ -168,6 +172,8 @@ aside#sidebar {
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  background-color: $color-abbey;
+  background-color: white;
+  color: $color-cod-gray;
   border-radius: 0;
+  border-bottom: solid $color-mexican-red 2px;
 }
